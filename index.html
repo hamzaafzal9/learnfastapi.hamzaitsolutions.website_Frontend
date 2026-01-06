@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Learn FastAPI with Hamza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Learning Hub | Hamza IT Solutions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Welcome to my FastAPI Learning Hub! 🚀</h1>
-    <p>This is where I document my journey learning High-Performance APIs.</p>
+
+    <nav>
+        <h3>📚 Course Menu</h3>
+        <ul>
+            <li><a href="#intro" class="active"><strong>1. Introduction</strong></a></li>
+            <li><a href="#install">2. Installation</a></li>
+            <li><a href="#first-steps">3. First Steps</a></li>
+            <li><a href="#path-params">4. Path Parameters</a></li>
+            <li><a href="https://hamzaitsolutions.website" class="back-link">⬅ Back to Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <button id="menu-toggle" class="mobile-only">☰ Menu</button>
+
+        <section id="intro">
+            <h1>Welcome to my FastAPI Hub 🚀</h1>
+            <p>This is where I document everything I learn about building High-Performance APIs with Python.</p>
+        </section>
+
+        <section id="install">
+            <h2>Installation</h2>
+            <p>To start using FastAPI, you need to install it with pip:</p>
+            <pre>pip install "fastapi[standard]"</pre>
+        </section>
+
+        <section id="first-steps">
+            <h2>First Code Example</h2>
+            <p>Here is the simplest FastAPI app:</p>
+            <pre>
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}</pre>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
